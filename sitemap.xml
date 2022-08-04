@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sh1n1ma.com/2022/08/04/2022-8-4/</loc>
+    
+    <lastmod>2022-08-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://sh1n1ma.com/2022/07/17/%E6%A2%A6/</loc>
     
     <lastmod>2022-07-17</lastmod>
@@ -139,7 +148,7 @@
 
   <url>
     <loc>https://sh1n1ma.com/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -147,28 +156,28 @@
   
   <url>
     <loc>https://sh1n1ma.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sh1n1ma.com/tags/%E7%88%AC%E8%99%AB/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sh1n1ma.com/tags/%E6%B1%82%E7%94%9F%E4%B9%8B%E8%B7%AF2/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sh1n1ma.com/tags/%E6%A2%A6%E5%A2%83/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -177,49 +186,49 @@
   
   <url>
     <loc>https://sh1n1ma.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sh1n1ma.com/categories/python/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sh1n1ma.com/categories/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sh1n1ma.com/categories/%E6%B8%B8%E6%88%8F/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sh1n1ma.com/categories/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sh1n1ma.com/categories/%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://sh1n1ma.com/categories/%E6%96%87%E6%91%98/</loc>
-    <lastmod>2022-07-17</lastmod>
+    <lastmod>2022-08-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
