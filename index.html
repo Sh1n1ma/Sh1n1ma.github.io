@@ -174,6 +174,97 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sh1n1ma.com/2022/09/09/%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2RssHub%E6%9C%8D%E5%8A%A1%E5%B0%8F%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Sh1n1ma">
+      <meta itemprop="description" content="情绪高于理智">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sh1n1ma's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/09/09/%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2RssHub%E6%9C%8D%E5%8A%A1%E5%B0%8F%E8%AE%B0/" class="post-title-link" itemprop="url">腾讯云服务器部署RSSHub服务小记</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-09-09 15:06:41 / 修改时间：15:28:36" itemprop="dateCreated datePublished" datetime="2022-09-09T15:06:41+08:00">2022-09-09</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>669</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>云服务器镜像: CentOS7.6-Docker20</p>
+<p>RSSHub官方部署教程，<u><a target="_blank" rel="noopener" href="https://docs.rsshub.app/install/#docker-jing-xiang">https://docs.rsshub.app/install/#docker-jing-xiang</a></u></p>
+<p>本次部署通过Docker Compose 部署.</p>
+<h3 id="1-安装docker"><a href="#1-安装docker" class="headerlink" title="1.安装docker"></a>1.安装docker</h3><p>首先安装docker，本次部署使用腾讯云预置docker镜像的服务器进行操作。</p>
+<h5 id="1-1-安装docker-compose"><a href="#1-1-安装docker-compose" class="headerlink" title="1.1 安装docker compose"></a>1.1 安装docker compose</h5><p>下载 docker compose(通过kgithub镜像下载)</p>
+<pre><code>$ sudo curl -L &quot;https://kgithub.com/docker/compose/releases/download/v2.10.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+</code></pre>
+<p>进行本地环境操作（待补充）</p>
+<pre><code>$ sudo chmod +x /usr/local/bin/docker-compose
+$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+</code></pre>
+<p>下载docker-compose.yml，也就是RSSHub服务的配置文件。</p>
+<pre><code>$ wget https://raw.githubusercontent.com/DIYgod/RSSHub/master/docker-compose.yml
+</code></pre>
+<h5 id="1-2-创建-volume-持久化-Redis-缓存"><a href="#1-2-创建-volume-持久化-Redis-缓存" class="headerlink" title="1.2 创建 volume 持久化 Redis 缓存"></a>1.2 创建 volume 持久化 Redis 缓存</h5><pre><code>$ docker volume create redis-data
+</code></pre>
+<h5 id="1-3-启动服务"><a href="#1-3-启动服务" class="headerlink" title="1.3 启动服务"></a>1.3 启动服务</h5><pre><code>$ docker-compose up -d
+</code></pre>
+<p>未完待续</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://sh1n1ma.com/2022/09/04/%E9%9A%8F%E6%83%B3-2022-9-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1137,104 +1228,11 @@ ___粗斜体文本___
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://sh1n1ma.com/2022/02/14/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="Sh1n1ma">
-      <meta itemprop="description" content="情绪高于理智">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sh1n1ma's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/02/14/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-02-14 22:09:00" itemprop="dateCreated datePublished" datetime="2022-02-14T22:09:00+08:00">2022-02-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-02-15 19:21:21" itemprop="dateModified" datetime="2022-02-15T19:21:21+08:00">2022-02-15</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%97%A5%E5%B8%B8/" itemprop="url" rel="index"><span itemprop="name">日常</span></a>
-                </span>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>141</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>本站建于2022年2月14日，用于分享学习经验和日常生活。</p>
-<pre><code>#include&lt;stdio.h&gt;
-#include&lt;stdlib.h&gt;
-int main(void)
-&#123;
-       printf(&quot;Hello World!&quot;);
-       return 0;   
-&#125;
-</code></pre>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
 
 
 
@@ -1301,7 +1299,7 @@ int main(void)
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

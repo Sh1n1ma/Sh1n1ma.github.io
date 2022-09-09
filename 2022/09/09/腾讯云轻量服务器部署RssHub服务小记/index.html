@@ -22,17 +22,19 @@
     var CONFIG = {"hostname":"sh1n1ma.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="情绪高于理智">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sh1n1ma&#39;s Blog">
-<meta property="og:url" content="https://sh1n1ma.com/categories/%E6%96%87%E6%91%98/index.html">
+  <meta name="description" content="云服务器镜像: CentOS7.6-Docker20 RSSHub官方部署教程，https:&#x2F;&#x2F;docs.rsshub.app&#x2F;install&#x2F;#docker-jing-xiang 本次部署通过Docker Compose 部署. 1.安装docker首先安装docker，本次部署使用腾讯云预置docker镜像的服务器进行操作。 1.1 安装docker compose下载 docker comp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="腾讯云服务器部署RSSHub服务小记">
+<meta property="og:url" content="https://sh1n1ma.com/2022/09/09/%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2RssHub%E6%9C%8D%E5%8A%A1%E5%B0%8F%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Sh1n1ma&#39;s Blog">
-<meta property="og:description" content="情绪高于理智">
+<meta property="og:description" content="云服务器镜像: CentOS7.6-Docker20 RSSHub官方部署教程，https:&#x2F;&#x2F;docs.rsshub.app&#x2F;install&#x2F;#docker-jing-xiang 本次部署通过Docker Compose 部署. 1.安装docker首先安装docker，本次部署使用腾讯云预置docker镜像的服务器进行操作。 1.1 安装docker compose下载 docker comp">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-09-09T07:06:41.000Z">
+<meta property="article:modified_time" content="2022-09-09T07:28:36.882Z">
 <meta property="article:author" content="Sh1n1ma">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://sh1n1ma.com/categories/%E6%96%87%E6%91%98/">
+<link rel="canonical" href="https://sh1n1ma.com/2022/09/09/%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2RssHub%E6%9C%8D%E5%8A%A1%E5%B0%8F%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -40,12 +42,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>分类: 文摘 | Sh1n1ma's Blog</title>
+  <title>腾讯云服务器部署RSSHub服务小记 | Sh1n1ma's Blog</title>
   
 
 
@@ -168,57 +170,127 @@
         <div class="content-wrap">
           
 
-          <div class="content category">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h2 class="collection-header">文摘
-          <small>分类</small>
-        </h2>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://sh1n1ma.com/2022/09/09/%E8%85%BE%E8%AE%AF%E4%BA%91%E8%BD%BB%E9%87%8F%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2RssHub%E6%9C%8D%E5%8A%A1%E5%B0%8F%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Sh1n1ma">
+      <meta itemprop="description" content="情绪高于理智">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sh1n1ma's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          腾讯云服务器部署RSSHub服务小记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-09-09 15:06:41 / 修改时间：15:28:36" itemprop="dateCreated datePublished" datetime="2022-09-09T15:06:41+08:00">2022-09-09</time>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>669</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <p>云服务器镜像: CentOS7.6-Docker20</p>
+<p>RSSHub官方部署教程，<u><a target="_blank" rel="noopener" href="https://docs.rsshub.app/install/#docker-jing-xiang">https://docs.rsshub.app/install/#docker-jing-xiang</a></u></p>
+<p>本次部署通过Docker Compose 部署.</p>
+<h3 id="1-安装docker"><a href="#1-安装docker" class="headerlink" title="1.安装docker"></a>1.安装docker</h3><p>首先安装docker，本次部署使用腾讯云预置docker镜像的服务器进行操作。</p>
+<h5 id="1-1-安装docker-compose"><a href="#1-1-安装docker-compose" class="headerlink" title="1.1 安装docker compose"></a>1.1 安装docker compose</h5><p>下载 docker compose(通过kgithub镜像下载)</p>
+<pre><code>$ sudo curl -L &quot;https://kgithub.com/docker/compose/releases/download/v2.10.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+</code></pre>
+<p>进行本地环境操作（待补充）</p>
+<pre><code>$ sudo chmod +x /usr/local/bin/docker-compose
+$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+</code></pre>
+<p>下载docker-compose.yml，也就是RSSHub服务的配置文件。</p>
+<pre><code>$ wget https://raw.githubusercontent.com/DIYgod/RSSHub/master/docker-compose.yml
+</code></pre>
+<h5 id="1-2-创建-volume-持久化-Redis-缓存"><a href="#1-2-创建-volume-持久化-Redis-缓存" class="headerlink" title="1.2 创建 volume 持久化 Redis 缓存"></a>1.2 创建 volume 持久化 Redis 缓存</h5><pre><code>$ docker volume create redis-data
+</code></pre>
+<h5 id="1-3-启动服务"><a href="#1-3-启动服务" class="headerlink" title="1.3 启动服务"></a>1.3 启动服务</h5><pre><code>$ docker-compose up -d
+</code></pre>
+<p>未完待续</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    
+    
+    
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-02-16T10:47:00+08:00"
-              content="2022-02-16">
-          02-16
-        </time>
-      </div>
+      <footer class="post-footer">
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/02/16/%E7%BE%8E%E6%96%87%E6%91%98%E5%BD%95/" itemprop="url">
-            <span itemprop="name">美文摘录</span>
-          </a>
-      </div>
+        
 
-    </header>
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/09/04/%E9%9A%8F%E6%83%B3-2022-9-3/" rel="prev" title="随想-2022/9/3">
+      <i class="fa fa-chevron-left"></i> 随想-2022/9/3
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
   </article>
-
-    </div>
-  </div>
   
   
-  
-
   
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC81NTUwMi8zMTk2OQ=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -265,6 +337,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%AE%89%E8%A3%85docker"><span class="nav-number">1.</span> <span class="nav-text">1.安装docker</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-%E5%AE%89%E8%A3%85docker-compose"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.1 安装docker compose</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-%E5%88%9B%E5%BB%BA-volume-%E6%8C%81%E4%B9%85%E5%8C%96-Redis-%E7%BC%93%E5%AD%98"><span class="nav-number">1.0.2.</span> <span class="nav-text">1.2 创建 volume 持久化 Redis 缓存</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-3-%E5%90%AF%E5%8A%A8%E6%9C%8D%E5%8A%A1"><span class="nav-number">1.0.3.</span> <span class="nav-text">1.3 启动服务</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -432,6 +505,21 @@ $(document).ready(function() {
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 </body>
 </html>
